@@ -2,8 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow-y: scroll; /* Allow vertical scrolling */
-   /*  Add padding for the fixed navigation bar */
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 .nav {
