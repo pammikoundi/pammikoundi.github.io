@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
-    <title>Koundinya Pammi - Web Developer</title>
+    <title>Koundinya Pammi - Computer Science Student</title>
 </head>
+
 <body>
-    <!-- Header section/nav bar should be on all pages -->
-    <header>
-        <div class="nav">
-            <a href="./index.html">
-                <img class="nav-icon" src="./images/favicon.svg" alt="Navigation Icon">
-            </a>
-            <div class="nav-headers">
-                <a href="./about.html">About</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./contact.html">Contact Me</a>
-            </div>
+    <Section class="nav">
+        <a href="./index.html"><img src="./images/favicon.svg" alt="logo"></a>
+        <div class="nav_buttons">
+            <a href="./Resume.html">Resume</a>
+            <a href="./Projects.html">Projects</a>
+            <a href="./Contact.html">Contact</a>
+  
         </div>
-    </header>
+    </Section>
+<div class="background"><H2>Hello Can this be seen</H2></div>
 
-    <!-- Home section -->
-    <section id="home">
-        <div class="intro">
-            <h1>Koundinya Pammi</h1>
-            <p>Web Developer | Student</p>
-            <h2>Join me as I learn!</h2>
-            <div class="intro-blurb">
-                <p>Hey there! I'm Koundinya Pammi, a passionate Computer Science student from Atlanta, GA.
-                    With a passion for problem-solving and a love for technology. From internships in IT 
-                    troubleshooting to building robots and automating tasks, I'm driven by curiosity and a desire to learn.
-                    Join me as I navigate the world of code, explore new horizons, and share my journey with you. Welcome to my digital space!</p>
+    <div class="page_content">
+
+        <Section class="card">
+            <div class="cardphoto">
+                <img src="./images/favicon.svg" alt="photo of Koundinya Pammi">
+                <h1>Koundinya Pammi</h1>
+                <h2>Student Portfolio</h2>
             </div>
-            <div class="photo">
-                <!-- Photo of me next to text -->
-            </div>
+            
             <div class="socials">
-                <!-- Add LinkedIn, Instagram, email, and Facebook buttons -->
-                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Instagram_font_awesome.svg" alt="Instagram Profile (https://commons.wikimedia.org/wiki/File:Instagram_font_awesome.svg)">
-                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Facebook_font_awesome.svg" alt="Facebook Profile (https://commons.wikimedia.org/wiki/File:Facebook_font_awesome.svg)">
-                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg" alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)">
-                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg" alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)">
-                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg" alt="Email (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)">
+                <a href="mailto:pammikoundi@gmail.com"><img class="social-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg"
+                        alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)"></a>
+                <a href="https://github.com/pammikoundi"><img class="social-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
+                        alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)"></a>
+                <a href="https://www.linkedin.com/in/koundinya-pammi-a32020251/"><img class="social-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"
+                        alt="linkedin (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)"></a>
             </div>
-            <div class="portfolio-button">
-                <!--have shadow behind button-->
-                <p>See my work</p>
+        </Section>
+        <Section class="right_side">
+            <h1>Hello, I'm Koundinya Pammi!</h1>
+            <h2>Join me as I learn!</h2>
+            <div class="buttons">
+                <a href="./Resume.html" class="button">My Resume</a>
+                <a href="./Projects" class="button">My Projects</a>
             </div>
+            <p>I'm Koundinya Pammi, a passionate Computer Science student from Atlanta, GA. 
+            With a passion for problem-solving and a love for technology. 
+            From internships in IT troubleshooting to building robots and automating 
+            tasks, I'm driven by curiosity and a desire to learn. Join me as I navigate 
+            the world of code, explore new horizons, and share my journey with you. 
+            Welcome to my digital space!</p>
+            </Section>
+    </div>
+
+    <Section class="footer">
+        <p>&copy 2023 Koundinya Pammi</p>
+        <div class="call">
+            <h1>Call</h1>
+            <p>(706)-300-5151</p>
         </div>
-    </section>
-    <section id="project preview">
-        <!--have 3 projects staggerd with small blurbs below them link them to longer blurbs in portfolio section-->
-    </section>
-<section id="expertise">
+        <div class="email">
+            <h1>Email</h1>
+            <p>pammikoundi@gmail.com</p>
+        </div>
+        <div class="socials">
+            <h1>Follow</h1>
+            <a href="mailto:pammikoundi@gmail.com"><img class="social-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg"
+                    alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)"></a>
+            <a href="https://github.com/pammikoundi"><img class="social-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
+                    alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)"></a>
+            <a href="https://www.linkedin.com/in/koundinya-pammi-a32020251/"><img class="social-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"
+                    alt="linkedin (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)"></a>
+        </div>
+    </Section>
 
-</section>
-<!--have experience listed in various fields in my expertise section-->
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2020 Koundinya Pammi. No copyright infraction is intended please contact regarding any issues.</p>
-    </footer>
 </body>
+
 </html>

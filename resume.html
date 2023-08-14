@@ -3,88 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Resume - Koundinya Pammi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .nav-icon {
-            width: 40px;
-            height: 40px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            margin-top: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <title>Koundinya Pammi-Resume</title>
 </head>
 <body>
-    <header>
-        <div class="nav">
-            <a href="./index.html"><img class="nav-icon" src="./images/favicon.svg" alt="Navigation Icon"></a>
-            <div class="nav-headers">
-                <a class="active" href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./resume.html">Resume</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-        </div>
-    </header>
+    <Section class="nav">
+      <a href="./index.html"><img src="./images/favicon.svg" alt="logo"></a>
+      <div class="nav_buttons">
+          <a href="./Resume.html">Resume</a>
+          <a href="./Projects.html">Projects</a>
+          <a href="./Contact.html">Contact</a>
 
+      </div>
+  </Section>
+
+  <div class="page_content">
     <section id="contact">
         <h2>Contact Information</h2>
         <ul>
@@ -160,6 +95,32 @@
       <p>Hobbies include building robots, automating tasks, and 3D printing. A science fiction enthusiast.</p>
       <p>Volunteer at local temple, teaching math to middle school students.</p>
     </section>
+  </div>
+
+    
+    <Section class="footer">
+      <p>&copy 2023 Koundinya Pammi</p>
+      <div class="call">
+          <h1>Call</h1>
+          <p>(706)-300-5151</p>
+      </div>
+      <div class="email">
+          <h1>Email</h1>
+          <p>pammikoundi@gmail.com</p>
+      </div>
+      <div class="socials">
+          <h1>Follow</h1>
+          <a href="mailto:pammikoundi@gmail.com"><img class="social-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg"
+                  alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)"></a>
+          <a href="https://github.com/pammikoundi"><img class="social-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
+                  alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)"></a>
+          <a href="https://www.linkedin.com/in/koundinya-pammi-a32020251/"><img class="social-icon"
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"
+                  alt="linkedin (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)"></a>
+      </div>
+  </Section>
 
 </body>
 </html>
