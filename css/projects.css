@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.page_content {
+
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+    gap: 30px;
+    margin-top:5%;
+    min-height: 85vh;
+}
+
+.project {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+    max-height: 25vh;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project_description {
+    padding: 20px;
+}
+
+.project_description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project_description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
