@@ -4,85 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
-    <title>Koundinya Pammi - Computer Science Student</title>
+    <title>Koundinya Pammi-Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile_view.css">
+    <script src="https://kit.fontawesome.com/5707c08c38.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
-    <Section class="nav">
-        <a href="./index.html"><img src="./images/favicon.svg" alt="logo"></a>
-        <div class="nav_buttons">
-            <a href="./Resume.html">Resume</a>
-            <a href="./Projects.html">Projects</a>
-            <a href="./Contact.html">Contact</a>
-  
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href=""><img src="./images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a class="nav_ico x_ico" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></a>
+                    </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#know">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <a class="nav_ico bars_ico" onclick="openmenu()"><i class="fa-solid fa-bars"></i></a>
+            </nav>
+
         </div>
-    </Section>
-<div class="background"><H2>Hello Can this be seen</H2></div>
-
-    <div class="page_content">
-
-        <Section class="card">
-            <div class="cardphoto">
-                <img src="./images/favicon.svg" alt="photo of Koundinya Pammi">
-                <h1>Koundinya Pammi</h1>
-                <h2>Student Portfolio</h2>
-            </div>
-            
-            <div class="socials">
-                <a href="mailto:pammikoundi@gmail.com"><img class="social-icon"
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg"
-                        alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)"></a>
-                <a href="https://github.com/pammikoundi"><img class="social-icon"
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
-                        alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)"></a>
-                <a href="https://www.linkedin.com/in/koundinya-pammi-a32020251/"><img class="social-icon"
-                        src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"
-                        alt="linkedin (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)"></a>
-            </div>
-        </Section>
-        <Section class="right_side">
-            <h1>Hello, I'm Koundinya Pammi!</h1>
-            <h2>Join me as I learn!</h2>
-            <div class="buttons">
-                <a href="./Resume.html" class="button">My Resume</a>
-                <a href="./Projects.html" class="button">My Projects</a>
-            </div>
-            <p>I'm Koundinya Pammi, a passionate Computer Science student from Atlanta, GA. 
-            With a passion for problem-solving and a love for technology. 
-            From internships in IT troubleshooting to building robots and automating 
-            tasks, I'm driven by curiosity and a desire to learn. Join me as I navigate 
-            the world of code, explore new horizons, and share my journey with you. 
-            Welcome to my digital space!</p>
-            </Section>
+        <div class="header_text">
+            <p>Student</p>
+            <h1>Hi,I'm <span>Koundinya</span><br>Pammi From Atlanta</h1>
+        </div>
     </div>
 
-    <Section class="footer">
-        <p>&copy 2023 Koundinya Pammi</p>
-        <div class="call">
-            <h1>Call</h1>
-            <p>(706)-300-5151</p>
+    <!-- About Section-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm a computer science student at the Georgia Institute of Technology, right in the heart
+                        of Atlanta.
+                        My academic focus revolves around data analysis and software engineering. Outside of classes, I
+                        enjoy diving
+                        into 3D modeling and 3D printing. I love bridging my hobbies with my passion for computer
+                        science whenever
+                        possible. You can check out some of the projects where these interests converge on my GitHub
+                        profile.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Software Development</span><br>Designing Command line interfaces</li>
+                            <li><span>Embedded Systems Development</span><br>Designing interfaces for Arduino and ESP
+                                modules</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-2022</span><br>Student Office Assistant</li>
+                            <li><span>2022-2024</span><br>Software Testing Intern</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduated: 2022</span><br>High School Diploma</li>
+                            <li><span>Expected: 2026</span><br>Bachelor's Degree Computer Science</li>
+                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="email">
-            <h1>Email</h1>
-            <p>pammikoundi@gmail.com</p>
+    </div>
+
+    <!--Knowledgeable skills section-->
+
+    <div id="know">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>UI/UX <br>Development</h2>
+                    <p>
+                        HTML and CSS
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Software Development</h2>
+                    <p>
+                        Python, Java, C++
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Embedded Systems Development</h2>
+                    <p>
+                        C++ and ROS
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="socials">
-            <h1>Follow</h1>
-            <a href="mailto:pammikoundi@gmail.com"><img class="social-icon"
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/2674096_object_email_web_essential_icon.svg"
-                    alt="Email (https://commons.wikimedia.org/wiki/File:2674096_object_email_web_essential_icon.svg)"></a>
-            <a href="https://github.com/pammikoundi"><img class="social-icon"
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d7/GitHub_font_awesome.svg"
-                    alt="Github Profile (https://commons.wikimedia.org/wiki/File:GitHub_font_awesome.svg)"></a>
-            <a href="https://www.linkedin.com/in/koundinya-pammi-a32020251/"><img class="social-icon"
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/8f/LinkedIn_font_awesome.svg"
-                    alt="linkedin (https://commons.wikimedia.org/wiki/File:LinkedIn_font_awesome.svg)"></a>
+    </div>
+    <!--Projects Section-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/filerenameSoftware.png">
+                    <div class="layer">
+                        <h3>Music File Modifying Software</h3>
+                        <p>This software uses DFS to search through folders and find unnessacary bloat data and deletes it from the music file.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/adventuraAI.png">
+                    <div class="layer">
+                        <h3>AdventuraAi</h3>
+                        <p>This is a web based app dedicated to generate new locations and itineraries using AI</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/vexRobotics.png">
+                    <div class="layer">
+                        <h3>Vex Robotics</h3>
+                        <p>Utilizing the VexCode API programmed competition robots aimed at preforming specific tasks determined at start of season</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="./projects.html" class="btn">See More</a>
         </div>
-    </Section>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">
+                Contact Me
+            </h1>
+            <div class="row">
+                <div class="contact-left">
+                    <a href="mailto: pammikoundi@gmail.com">pammikoundi@gmail.com</a>
+                    <p>+1 (706)-300-5151</p>
+                </div>
+                <div class="contact-right">
+                    <div class="social_media">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-snapchat"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu")
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        //nav controls
+        function openmenu() {
+console.log("Hello");
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 
 </body>
 
