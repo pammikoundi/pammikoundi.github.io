@@ -4,34 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koundinya Pammi-Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobile_view.css">
+    <link rel="stylesheet" href="./mobile_style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://kit.fontawesome.com/5707c08c38.js" crossorigin="anonymous"></script>
+    <title>Koundinya Pammi-Portfolio</title>
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href=""><img src="./images/logo.png" class="logo"></a>
-                <ul id="sidemenu">
-                    <li><a class="nav_ico x_ico" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></a>
-                    </li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#know">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-                <a class="nav_ico bars_ico" onclick="openmenu()"><i class="fa-solid fa-bars"></i></a>
-            </nav>
 
-        </div>
-        <div class="header_text">
-            <p>Student</p>
-            <h1>Hi,I'm <span>Koundinya</span><br>Pammi From Atlanta</h1>
+    <div id="header">
+        <div id="blob"></div>
+        <div id="blur"></div>
+
+        <nav>
+            <a href="" class="initvis nav_ico logo"><img src="./images/logo.svg" class="logo"></a>
+            <a class="initvis nav_ico bars_ico" onclick="openmenu()"><i class="fa-solid fa-bars"></i></a>
+            <a class="nav_ico x_ico" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></a>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./Koundinya_Pammi_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <a href="" class="logo"><img src="./images/logo.svg" class="logo"></a>
+                <li><a href="https://github.com/pammikoundi/" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="#know">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="header_row">
+                <div class="header_text">
+                    <h1>Koundinya Pammi</h1>
+                    <h2>Student | Developer</h2>
+                </div>
+                <div class="header_animation">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                        type="module"></script><dotlottie-player
+                        src="https://lottie.host/bf76bc5d-4e9f-41f5-9f73-a9ad5e647686/4ioL0MgydI.json"
+                        background="transparent" speed="1" style="width: 50vw; height: 50vw" direction="1"
+                        playMode="normal" loop autoplay></dotlottie-player>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <!-- About Section-->
 
@@ -66,13 +83,17 @@
                             <li><span>Software Development</span><br>Designing Command line interfaces</li>
                             <li><span>Embedded Systems Development</span><br>Designing interfaces for Arduino and ESP
                                 modules</li>
+                            <li><span>Artifical Intelligence Development</span><br>Work experience through summer
+                                internship at NCR</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2020-2022</span><br>Student Office Assistant</li>
-                            <li><span>2022-2024</span><br>Software Testing Intern</li>
+                            <li><span>August 2020 - May 2022</span><br>Student Office Assistant</li>
+                            <li><span>May 2023 - May 2024</span><br>Software Testing Intern</li>
+                            <li><span>May 2024 - August 2024</span><br>Software Engineering Intern</li>
+                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
                         </ul>
                     </div>
 
@@ -80,7 +101,6 @@
                         <ul>
                             <li><span>Graduated: 2022</span><br>High School Diploma</li>
                             <li><span>Expected: 2026</span><br>Bachelor's Degree Computer Science</li>
-                            <li><span>App Development</span><br>Designing Web/App interfaces</li>
                         </ul>
                     </div>
 
@@ -110,49 +130,122 @@
                     </p>
                 </div>
                 <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>App Development</h2>
+                    <p>
+                        Kotlin, Java, Android Studio
+                    </p>
+                </div>
+                <div>
                     <i class="fa-solid fa-microchip"></i>
-                    <h2>Embedded Systems Development</h2>
+                    <h2>Embedded Systems</h2>
                     <p>
                         C++ and ROS
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p>
+                        Python, Tensorflow, Keras
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <!--Projects Section-->
+
+    <!--Portfolio section-->
 
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./images/filerenameSoftware.png">
-                    <div class="layer">
-                        <h3>Music File Modifying Software</h3>
-                        <p>This software uses DFS to search through folders and find unnessacary bloat data and deletes it from the music file.</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h1 class="sub-title">My Portfolio</h1>
+
+            <div class="options">
+                <div class="option" id="classapp" onclick="opendiv('classapp')"
+                    style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Class Task Managing/Scheduling App</div>
+                            <div class="sub">An app built in Android Studio using java and xml. Utilizes a Sqlite
+                                database for organization and multi user support. </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="./images/adventuraAI.png">
-                    <div class="layer">
-                        <h3>AdventuraAi</h3>
-                        <p>This is a web based app dedicated to generate new locations and itineraries using AI</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="option" id="spotifywrappedapp" onclick="opendiv('spotifywrappedapp')"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Spotify Wrapped App</div>
+                            <div class="sub">An app built using Kotlin. Utilizes firebase authentication and realtime
+                                database for user management and data storage. App provides users with the ability to
+                                generate Spotify Wrapped presentations year-around. Additional features include music
+                                playback and time-range selection.</div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="./images/vexRobotics.png">
-                    <div class="layer">
-                        <h3>Vex Robotics</h3>
-                        <p>Utilizing the VexCode API programmed competition robots aimed at preforming specific tasks determined at start of season</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                <div class="option active" id="tempsensor" onclick="opendiv('tempsensor')"
+                    style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Temperature Monitoring Sensor</div>
+                            <div class="sub">Utilizing Arduino, NTC Thermistor, LCD display, read raw analog input and
+                                relay it to readable common language.</div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="option" id="notestoragewebapp" onclick="opendiv('notestoragewebapp')"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Note Storage Web App</div>
+                            <div class="sub">Built using Python, Tensorflow, and Tessaract OCR. Designed to easily store
+                                pages of notes in a way that can be accessed through a database with search
+                                functionality.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" id="adventuraAI" onclick="opendiv('adventuraAI')"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">AdenturaAI</div>
+                            <div class="sub">Web app built using python backend and javascript frontend. Helps users to
+                                decide on the next place they want to visit. Select from popular tourist destinations
+                                and have the AI generate a itinerary for the time frame you plan to stay there.</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <a href="./projects.html" class="btn">See More</a>
+
         </div>
     </div>
+
+
+
+    <!-- Contact Section-->
 
     <div id="contact">
         <div class="container">
@@ -163,12 +256,23 @@
                 <div class="contact-left">
                     <a href="mailto: pammikoundi@gmail.com">pammikoundi@gmail.com</a>
                     <p>+1 (706)-300-5151</p>
+
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                        <em>Enable Dark Mode</em>
+                    </div>
+
                 </div>
                 <div class="contact-right">
+
                     <div class="social_media">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-snapchat"></i>
+                        <a href="https://github.com/pammikoundi/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="www.linkedin.com/in/koundinya-pammi-a32020251" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -178,9 +282,12 @@
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
+        var optionlinks = document.getElementsByClassName("options");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        var sidemenu = document.getElementById("sidemenu")
-
+        var optioncontent = document.getElementsByClassName("option");
+        var sidemenu = document.getElementById("sidemenu");
+        var barsIco = document.getElementsByClassName("nav_ico bars_ico")[0];
+        var xIco = document.getElementsByClassName("nav_ico x_ico")[0];
 
         function opentab(tabname) {
             for (tablink of tablinks) {
@@ -192,14 +299,74 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+
+        function opendiv(divname) {
+            for (optionlink of optionlinks) {
+                optionlink.classList.remove("active");
+            }
+            for (tabcontent of optioncontent) {
+                tabcontent.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(divname).classList.add("active");
+        }
+
         //nav controls
         function openmenu() {
-console.log("Hello");
             sidemenu.style.right = "0px";
+            barsIco.style.display = "none";
+            xIco.style.display = "block";
+
         }
         function closemenu() {
             sidemenu.style.right = "-200px";
+            barsIco.style.display = "block";
+            xIco.style.display = "none";
+
         }
+
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+        const blob = document.getElementById("blob");
+        const headerHeight = document.getElementById("header").offsetHeight;
+
+        window.onpointermove = event => {
+            const { clientX, clientY } = event;
+            const maxY = window.innerHeight - headerHeight;
+
+            blob.animate(
+                {
+                    left: `${clientX}px`,
+                    top: `${Math.min(clientY, maxY)}px`
+                },
+                { duration: 3000, fill: "forwards" }
+            );
+        };
+
+
     </script>
 
 </body>
