@@ -16,7 +16,6 @@
     --Accent: #3D3196;
     --Skills_Offset_Color: #a0abad;
 
-
     @keyframes rotate {
         from {
             rotate: 0deg;
@@ -29,6 +28,10 @@
         to {
             rotate: 360deg;
         }
+    }
+
+    .logo img{
+        filter:invert(1);
     }
 
     #blob {
@@ -105,6 +108,7 @@ nav {
     height: 7.5vh;
     margin-left: 25px;
     margin-right: 25px;
+    
 }
 
 nav ul li {
