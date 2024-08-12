@@ -1,0 +1,41 @@
+
+.container{
+    width: 95%;
+    margin-bottom:25px;
+}
+.subtitle{
+    font-size: 3rem;
+    margin:15px 0px;
+    color:var(--Text);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container p {
+    padding: 5px 0px;
+    font-size:1rem;
+    color:var(--Text);
+}
+
+.container a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--Text);
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.social_media a {
+    margin: 0px 15px;
+}
+
+.themeIcon{
+    margin: 0px 15px;
+    color:var(--Text);
+}
