@@ -9,8 +9,11 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Header />
+      <section id="about"></section>
       <About  />
+      <section id="portfolio"></section>
       <Portfolio />
+      <section id="contact"></section>
       <Footer/>
     </main>
   );

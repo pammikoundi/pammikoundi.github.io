@@ -22,6 +22,7 @@ const Navbar = () => {
             </div>
             <ul className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
                 <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="./Koundinya_Pammi_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -33,7 +34,6 @@ const Navbar = () => {
                         Github
                     </a>
                 </li>
-                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </div>
     );
