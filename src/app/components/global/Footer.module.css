@@ -39,3 +39,20 @@
     margin: 0px 15px;
     color:var(--Text);
 }
+
+@media (max-width: 768px) {
+    .social_media {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    
+    .social_media a {
+        margin: 0px 10px;
+    }
+    
+    .themeIcon{
+        margin: 0px 10px;
+        color:var(--Text);
+    }
+}
