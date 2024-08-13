@@ -1,0 +1,25 @@
+.container {
+    margin-top: 8.5vh;
+    width: 95%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left {
+    font-size: .5rem;
+    z-index: 3; /* Make sure it's above blob and blur */
+    margin: 25vh 0px;
+    color: var(--Text);
+  }
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left {
+      font-size: 2rem;
+    }
+  }

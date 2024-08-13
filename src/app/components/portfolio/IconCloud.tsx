@@ -13,11 +13,11 @@ import {
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
-      paddingTop: 40,
+      width: "80%",
+      padding: 10,
+      background:"white",
+      borderRadius:"15px",
+      minWidth:"250px"
     },
   },
   options: {
@@ -31,8 +31,8 @@ export const cloudProps: Omit<ICloud, "children"> = {
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: "#0000",
-    maxSpeed: 0.04,
-    minSpeed: 0.02,
+    maxSpeed: 0.02,
+    minSpeed: 0.001,
     // dragControl: false,
   },
 };
