@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import IconCloud from './IconCloud';
 import styles from './Header.module.css';
-
+/*
+<h2>Front-End</h2>
+<h3>React, Next.js</h3>
+<h2>Backend</h2>
+<h3>Python, FastAPI</h3>
+<h2>Web Services / Cloud Integration</h2>
+<h3>Azure Cloud</h3>
+*/
 const Header = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.left}>
-                <h1>My Preferred Tech Stack:</h1>
-                <h2>Front-End</h2>
-                <h3>React, Next.js</h3>
-                <h2>Backend</h2>
-                <h3>Python, FastAPI</h3>
-                <h2>Web Services / Cloud Integration</h2>
-                <h3>Azure Cloud</h3>
+            <div className={styles.header_text}>
+                <h1>My WorkFlow</h1>
             </div>
             <div className={styles.right}>
                 <IconCloud
@@ -43,7 +44,8 @@ const Header = () => {
                         'visualstudiocode',
                     ]}
                 />
-            </div>
+                <p className={styles.text_bottom}>Technology Which I Have Experience With</p>
+            </div>    
         </div>
     );
 };

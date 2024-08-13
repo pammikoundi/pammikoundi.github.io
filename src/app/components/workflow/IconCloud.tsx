@@ -9,7 +9,6 @@ import {
   renderSimpleIcon,
   SimpleIcon,
 } from "react-icon-cloud";
-
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
@@ -84,5 +83,6 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>
+    
   );
 }
