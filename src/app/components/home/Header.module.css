@@ -1,77 +1,91 @@
-.container{
-    margin-top: 7.5vh;
-    width: 95%;
-    min-height: 90vh;
-    display: flex;
-    justify-content: space-between;
+.container {
+  margin-top: 5vh;
+  width: 95%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Ensure relative positioning */
+}
+
+.blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  backdrop-filter: blur(12vmax);
+
 }
 
 .header_text {
-    font-size: 3.5rem;
-    flex-basis: 35%;
-    z-index: 1;
-    margin:25vh 0px;
-    color:var(--Text);
+  font-size: 3.5rem;
+  flex-basis: 35%;
+  z-index: 3; /* Make sure it's above blob and blur */
+  margin: 25vh 0px;
+  color: var(--Text);
 }
 
-.header h2 {
-    font-size: 25px;
-    margin-top: auto;
-    justify-content: center;
-    background: linear-gradient(120deg, var(--Primary), var(--Accent));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+.header_text h2 {
+  font-size: 25px;
+  margin-top: auto;
+  justify-content: center;
+  background: linear-gradient(120deg, var(--Primary), var(--Accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Typing effect */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid black;
+  width: 0; /* Initially hide the text */
+  
+  animation: 
+    typing 3.5s steps(40, end) forwards, /* Typing animation */
+    blink 0.75s step-end 3.5s 3, /* Cursor blinking with delay */
+    fadeOut 0.75s ease 5.75s forwards; /* Fade out cursor */
 }
 
 .lottie {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 3; /* Ensure it's above blob and blur */
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 260px; }
-  }
-  
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
-  }
-  
-  @keyframes fadeOut {
-    0% { border-color: black; }
-    100% { border-color: transparent; }
-  }
-  
-  .header_text h2 {
-    font-size: 25px;
-    margin-top: auto;
-    justify-content: center;
-    background: linear-gradient(120deg, var(--Primary), var(--Accent));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    /* Typing effect */
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid black;
-    width: 0; /* Initially hide the text */
-    
-    animation: 
-      typing 3.5s steps(40, end) forwards, /* Typing animation */
-      blink 0.75s step-end 3.5s 3, /* Cursor blinking with delay */
-      fadeOut 0.75s ease 5.75s forwards; /* Fade out cursor */
-  }
+  from { width: 0; }
+  to { width: 260px; }
+}
 
-  @media screen and (max-width: 768px) {
-    .header_text {
-      font-size: 2rem;
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@keyframes fadeOut {
+  0% { border-color: black; }
+  100% { border-color: transparent; }
+}
+
+@media screen and (max-width: 768px) {
+  .header_text {
+    font-size: 2rem;
   }
-    .lottie{
-      display: none;
-    }
+  .lottie{
+    display: none;
   }
+}

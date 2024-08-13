@@ -7,6 +7,8 @@ const Header = () => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.blob}></div>
+            <div className={styles.blur}></div>
             <div className={styles.header_text}>
                 <h1>Koundinya Pammi</h1>
                 <h2>Student | Developer</h2>
