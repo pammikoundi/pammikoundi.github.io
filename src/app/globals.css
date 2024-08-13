@@ -1,0 +1,33 @@
+:root {
+  --Text: #081517;
+  --Background: #F7FCFD;
+  --Primary: #4ABCC4;
+  --Secondary: #979FDD;
+  --Accent: #7569CE;
+  --Skills_Offset_Color: #112d32;
+  --logoInvert:0%;
+  --navBackground:rgba(255, 255, 255, 0.1);
+}
+
+:root .dark-mode{
+  --Text: #E8F5F7;
+  --Background: #020708;
+  --Primary: #3BADB5;
+  --Secondary: #2c3cb3;
+  --Accent: #3D3196;
+  --Skills_Offset_Color: #a0abad;
+  --logoInvert:100%;
+  --navBackground:rgba(45, 45, 45, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
