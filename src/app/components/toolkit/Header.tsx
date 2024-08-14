@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header_text}>
-                <h1>My WorkFlow</h1>
+                <h1>My Toolkit</h1>
             </div>
             <div className={styles.right}>
                 <IconCloud

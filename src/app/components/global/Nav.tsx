@@ -34,8 +34,8 @@ const Navbar = () => {
                 <li onClick={() => navigateToSection('/#portfolio')}>
                     Portfolio
                 </li>
-                <li onClick={() => navigateToSection('/workflow')}>
-                    Workflow
+                <li onClick={() => navigateToSection('/toolkit')}>
+                    Toolkit
                 </li>
                 <li onClick={() => navigateToSection('#contact')}>
                     Contact
