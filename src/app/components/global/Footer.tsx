@@ -9,7 +9,7 @@ const Footer = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('isDarkMode');
-      return savedTheme ? JSON.parse(savedTheme) : false;
+      return savedTheme ? JSON.parse(savedTheme) : (window.matchMedia('(prefers-color-scheme: dark)').matches);
     }
     return false;
   });
