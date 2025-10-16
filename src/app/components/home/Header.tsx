@@ -1,8 +1,11 @@
-'use client'
+ 'use client'
 import React from 'react';
 import styles from './Header.module.css';
-import Lottie from "lottie-react";
+import dynamic from 'next/dynamic';
 import animationData from '../../../../public/LaptopAnimation.json'
+
+// Lottie can access the DOM; load it only on the client
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 const Header = () => {
 
     return (
