@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import IconCloud from './IconCloud';
+import React from 'react';
+import dynamic from 'next/dynamic';
+// Load IconCloud only on the client because it (or its dependencies) access the DOM
+const IconCloud = dynamic(() => import('./IconCloud'), { ssr: false });
 import styles from './Header.module.css';
 /*
 <h2>Front-End</h2>
